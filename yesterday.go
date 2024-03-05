@@ -83,7 +83,7 @@ func main() {
 	log.SetFlags(0)
 	flag.Usage = usage
 	flag.Parse()
-	if len(flag.Args()) < 1 || (*cp && (*cpIfDiff || *diff)) || (*daysAgo > 0 && *date != "") {
+	if flag.NArg() < 1 || (*cp && (*cpIfDiff || *diff)) || (*daysAgo > 0 && *date != "") {
 		usage()
 	}
 	t := time.Now()
