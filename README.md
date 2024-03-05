@@ -4,7 +4,7 @@ Yesterday prints file names from the dump.
 
 Usage:
 
-    yesterday [-c | -C | -d] [-n daysago | -t [[yy]yy]mm]dd] file...
+    yesterday [-c | -C | -d] [-n daysago | -t [[[yy]yy]mm]dd] file...
 
 Yesterday prints the names of the files from the most recent dump. Since
 dumps are done early in the morning, yesterday's files are really in today's

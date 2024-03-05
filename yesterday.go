@@ -6,7 +6,7 @@
 //
 // Usage:
 //
-//	yesterday [-c | -C | -d] [-n daysago | -t [[yy]yy]mm]dd] file...
+//	yesterday [-c | -C | -d] [-n daysago | -t [[[yy]yy]mm]dd] file...
 //
 // Yesterday prints the names of the files from the most recent dump. Since
 // dumps are done early in the morning, yesterday's files are really in today's
@@ -74,7 +74,7 @@ var (
 )
 
 func usage() {
-	fmt.Fprintf(os.Stderr, "usage: yesterday [-c | -C | -d] [-n daysago | -t [[yy]yy]mm]dd] file...\n")
+	fmt.Fprintf(os.Stderr, "usage: yesterday [-c | -C | -d] [-n daysago | -t [[[yy]yy]mm]dd] file...\n")
 	os.Exit(2)
 }
 
